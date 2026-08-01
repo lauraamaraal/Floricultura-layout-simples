@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define o conjunto de caracteres como UTF-8 para suportar acentos e caracteres especiais -->
+    <meta charset="UTF-8">
+    
+    <!-- Configura a viewport para tornar o site responsivo em dispositivos moveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Floricultura Flor e Amor</title>
+    
+    <!-- Ícone que aparece na aba do navegador (favicon) -->
+    <link rel="icon" type="image/x-icon" href="imagens.flores/flower.png">
+    
+    <!-- Pré-conexão com o Google Fonts para melhor performance de carregamento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Importa as fontes Great Vibes (cursiva) e Cutive Mono (monoespaçada) do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cutive+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Importa o arquivo CSS externo com todos os estilos da página -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== CABEÇALHO ===== -->
+    <!-- Cabeçalho fixo no topo da página com a navegação principal -->
+    <header class="cabecalho">
+        <!-- Container da navegação para centralizar e organizar os links -->
+        <nav class="nav-container">
+            <!-- Lista não ordenada com os links de navegação -->
+            <ul class="nav-links">
+                <!-- Links âncora que levam para seções específicas da página -->
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#saiba-mais">Saiba Mais!</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- ===== SEÇÃO INICIAL ===== -->
+    <!-- Seção hero com a mensagem principal da floricultura -->
+    <section class="hero">
+        <!-- Div que centraliza o conteúdo textual -->
+        <div class="texto-central">
+            <!-- Título principal usando fonte cursiva Great Vibes -->
+            <h1>Flor e Amor</h1>
+            <!-- Subtítulo com destaque em negrito -->
+            <p class="subtitulo"><strong>Beleza em cada pétala</strong></p>
+        </div>
+    </section>
+    
+    <!-- ===== MENU ===== -->
+    <!-- Seção que exibe o catálogo de flores disponíveis -->
+    <section id="menu" class="conteudo">
+        <!-- Título da seção -->
+        <h2 class="titulo-secao">Menu</h2>
+        <!-- Descrição da seção -->
+        <p class="descricao-secao"><strong>Flores selecionadas com todo carinho para você!</strong></p>
+        
+        <!-- Grid que organiza os cards de flores em colunas -->
+        <div class="grid-flores">
+            <!-- CARD 1 - Rosas Vermelhas -->
+            <div class="flor-card">
+                <!-- Container da imagem da flor -->
+                <div class="flor-imagem">
+                    <img src="imagens.flores/rosasvermelhas.jpg" alt="Rosas Vermelhas">
+                </div>
+                <!-- Container das informações da flor -->
+                <div class="flor-info">
+                    <!-- Nome da flor -->
+                    <h3>Rosas Vermelhas</h3>
+                    <!-- Descrição da flor -->
+                    <p class="flor-descricao">Clássicas e apaixonantes, as rosas vermelhas são o símbolo máximo do amor.</p>
+                    <!-- Preço da flor -->
+                    <p class="flor-preco">R$ 89,90</p>
+                    <!-- Botão para comprar -->
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+            
+            <!-- CARD 2 - Girassóis -->
+            <div class="flor-card">
+                <div class="flor-imagem">
+                    <img src="imagens.flores/girassois.jpg" alt="Girassóis">
+                </div>
+                <div class="flor-info">
+                    <h3>Girassóis</h3>
+                    <p class="flor-descricao">Alegria e energia em forma de flor. Trazem felicidade para qualquer ambiente.</p>
+                    <p class="flor-preco">R$ 69,90</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+            
+            <!-- CARD 3 - Orquídeas -->
+            <div class="flor-card">
+                <div class="flor-imagem">
+                    <img src="imagens.flores/orquidea.jpg" alt="Orquídeas">
+                </div>
+                <div class="flor-info">
+                    <h3>Orquídeas</h3>
+                    <p class="flor-descricao">Elegantes e sofisticadas, as orquídeas representam beleza e força.</p>
+                    <p class="flor-preco">R$ 149,90</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+            
+            <!-- CARD 4 - Margaridas -->
+            <div class="flor-card">
+                <div class="flor-imagem">
+                    <img src="imagens.flores/margaridas.jpg" alt="Margaridas">
+                </div>
+                <div class="flor-info">
+                    <h3>Margaridas</h3>
+                    <p class="flor-descricao">Simples e encantadoras, as margaridas trazem leveza e pureza.</p>
+                    <p class="flor-preco">R$ 59,90</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ===== SOBRE NÓS ===== -->
+    <!-- Seção que conta a história, valores e especialidades da floricultura -->
+    <section id="sobre" class="conteudo">
+        <!-- Título da seção -->
+        <h2>Sobre Nós</h2>
+        <!-- Descrição da seção -->
+        <p class="descricao-secao"><strong>Saiba mais sobre nossa floricultura!</strong></p>
+        
+        <!-- Grid principal da seção sobre -->
+        <div class="sobre-grid">
+            <!-- COLUNA 1: História -->
+            <!-- Item que contém a história da floricultura -->
+            <div class="sobre-item">
+                <!-- Container da foto -->
+                <div class="sobre-foto">
+                    <img src="imagens.flores/florista.jpg" alt="Nossa Florista">
+                </div>
+                <!-- Container do texto -->
+                <div class="sobre-texto">
+                    <h3>Nossa História</h3>
+                    <p>Há mais de 10 anos, a <strong>Flor e Amor</strong> nasceu de um sonho: levar beleza e alegria para a vida das pessoas através das flores. Nossa fundadora, Luísa Flores, aprendeu desde cedo com sua avó os segredos do cultivo e do amor pela natureza.</p>
+                    <br>
+                    <p>O que começou como um pequeno jardim no quintal, hoje é uma estufa cheia de cores e vida, onde cada flor é cultivada com carinho e dedicação.</p>
+                </div>
+            </div>
+            
+            <!-- COLUNA 2: Valores -->
+            <!-- Item que contém os valores da empresa -->
+            <div class="sobre-item">
+                <div class="sobre-texto">
+                    <h3>Nossos Valores</h3>
+                    <!-- Lista não ordenada com os valores -->
+                    <ul class="lista-valores">
+                        <li><strong>Sustentabilidade:</strong> Cultivo orgânico e respeito à natureza</li>
+                        <li><strong>Amor:</strong> Cada buquê feito com carinho e atenção</li>
+                        <li><strong>Qualidade:</strong> Flores frescas e selecionadas a dedo</li>
+                        <li><strong>Confiança:</strong> Compromisso com nossos clientes</li>
+                    </ul>
+                </div>
+                <div class="sobre-foto">
+                    <img src="imagens.flores/flores.jpg" alt="Nossas Flores">
+                </div>
+            </div>
+            
+            <!-- ===== NOSSAS ESPECIALIDADES (BLOCO INTEIRO) ===== -->
+            <!-- Bloco que ocupa as duas colunas mostrando as especialidades -->
+            <div class="sobre-item especialidades-bloco">
+                <!-- Título centralizado -->
+                <div class="sobre-texto" style="grid-column: 1 / -1;">
+                    <h3 style="text-align: center; font-size: 36px; margin-bottom: 30px;">Nossas Especialidades</h3>
+                </div>
+                
+                <!-- Grid das especialidades dentro do bloco -->
+                <div class="especialidades-grid" style="grid-column: 1 / -1;">
+                    <!-- Especialidade 1 - Buquês Personalizados -->
+                    <div class="especialidade">
+                        <div class="especialidade-foto">
+                            <img src="imagens.flores/buque.jpg" alt="Buquê Personalizado">
+                        </div>
+                        <div class="especialidade-info">
+                            <h4>Buquês Personalizados</h4>
+                            <p>Criamos arranjos únicos para cada ocasião, com flores selecionadas especialmente para você.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Especialidade 2 - Presentes Florais -->
+                    <div class="especialidade">
+                        <div class="especialidade-foto">
+                            <img src="imagens.flores/presente.jpg" alt="Presentes Florais">
+                        </div>
+                        <div class="especialidade-info">
+                            <h4>Presentes Florais</h4>
+                            <p>Combinações especiais com chocolates, cartões e mensagens personalizadas para surpreender quem você ama.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Especialidade 3 - Entrega em Domicílio -->
+                    <div class="especialidade">
+                        <div class="especialidade-foto">
+                            <img src="imagens.flores/entrega.jpg" alt="Entrega em Domicílio">
+                        </div>
+                        <div class="especialidade-info">
+                            <h4>Entrega em Domicílio</h4>
+                            <p>Entregamos com todo cuidado e pontualidade, garantindo que suas flores cheguem fresquinhas.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Especialidade 4 - Arranjos para Eventos -->
+                    <div class="especialidade">
+                        <div class="especialidade-foto">
+                            <img src="imagens.flores/arranjos.jpg" alt="Arranjos para Eventos">
+                        </div>
+                        <div class="especialidade-info">
+                            <h4>Arranjos para Eventos</h4>
+                            <p>Casamentos, aniversários e formaturas. Criamos decorações florais que encantam e emocionam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ===== SAIBA MAIS ===== -->
+    <!-- Seção com localização e redes sociais -->
+    <section id="saiba-mais" class="conteudo">
+        <h2>Saiba Mais</h2>
+        <p class="descricao-secao"><strong>Nossa localização e redes sociais!</strong></p>
+        
+        <!-- Grid com dois blocos: localização e redes sociais -->
+        <div class="saibamais-grid">
+            <!-- ===== LOCALIZAÇÃO ===== -->
+            <!-- Bloco com endereço e informações de funcionamento -->
+            <div class="saibamais-item localizacao">
+                <div class="saibamais-texto">
+                    <h3>Nossa Localização</h3>
+                </div>
+                <!-- Imagem da localização -->
+                <div class="saibamais-foto">
+                    <img src="imagens.flores/local.jpg" alt="Nossa Localização">
+                </div>
+                <!-- Informações de endereço e horário -->
+                <div class="saibamais-info">
+                    <p>Rua das Flores, 123 - Jardim Botânico<br>
+                    São Paulo - SP<br>
+                    CEP: 01234-567</p>
+                    <p>Funcionamento: Segunda a Sábado, das 9h às 17h</p>
+                </div>
+            </div>
+            
+            <!-- ===== REDES SOCIAIS ===== -->
+            <!-- Bloco com links para as redes sociais -->
+            <div class="saibamais-item redes-sociais-bloco">
+                <div class="saibamais-texto">
+                    <h3>Siga nossas redes sociais</h3>
+                </div>
+                <div class="saibamais-foto">
+                </div>
+                <!-- Container dos links das redes sociais -->
+                <div class="redes-sociais">
+                    <!-- Link do Instagram -->
+                    <a href="https://www.instagram.com" target="_blank" class="rede-link">
+                        <img src="imagens.flores/instagram.png" alt="Instagram" class="rede-icon">
+                        <span>Instagram</span>
+                    </a>
+                    
+                    <!-- Link do Facebook -->
+                    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" class="rede-link">
+                        <img src="imagens.flores/facebook.png" alt="Facebook" class="rede-icon">
+                        <span>Facebook</span>
+                    </a>
+                    
+                    <!-- Link do WhatsApp -->
+                    <a href="https://api.whatsapp.com" target="_blank" class="rede-link">
+                        <img src="imagens.flores/whatsapp.png" alt="WhatsApp" class="rede-icon">
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+                <!-- Texto informativo -->
+                <div class="saibamais-info">
+                    <p>Fique por dentro das novidades e promoções!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Importa o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>

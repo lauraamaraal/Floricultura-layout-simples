@@ -1,0 +1,1019 @@
+/* ========================================
+   RESET E CONFIGURAÇÕES GERAIS
+   ======================================== */
+
+/* Remove margens e preenchimentos padrão de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo base do corpo da página */
+body {
+    font-family: 'Cutive Mono', serif;  /* Fonte principal */
+    background: rgba(255, 255, 255, 0.8);  /* Fundo branco com transparência */
+    padding-top: 70px;  /* Espaço para o cabeçalho fixo */
+}
+
+/* ========================================
+   CABEÇALHO
+   ======================================== */
+
+/* Cabeçalho fixo no topo da página */
+.cabecalho {
+    position: fixed;  /* Fixa o cabeçalho no topo */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Ocupa toda a largura */
+    background: #4a6b3a;  /* Fundo verde escuro */
+    padding: 18px 0;
+    z-index: 1000;  /* Fica acima de outros elementos */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    transition: transform 0.4s ease;  /* Animação suave para esconder/mostrar */
+}
+
+/* Classe para esconder o cabeçalho (usado com JavaScript) */
+.cabecalho.esconder {
+    transform: translateY(-100%);  /* Move para cima, fora da tela */
+}
+
+/* Container da navegação - centraliza o conteúdo */
+.nav-container {
+    max-width: 1200px;  /* Largura máxima */
+    margin: 0 auto;  /* Centraliza horizontalmente */
+    padding: 0 20px;
+    display: flex;  /* Flexbox para alinhamento */
+    justify-content: center;  /* Centraliza os itens */
+    align-items: center;
+}
+
+/* Lista de links de navegação */
+.nav-links {
+    list-style: none;  /* Remove os marcadores da lista */
+    display: flex;  /* Exibe os itens em linha */
+    gap: 50px;  /* Espaçamento entre os itens */
+}
+
+/* Estilo dos links de navegação */
+.nav-links li a {
+    font-family: 'Cutive Mono', serif;
+    font-size: 18px;
+    color: #ffffff;  /* Texto branco */
+    text-decoration: none;  /* Remove o sublinhado */
+    text-transform: uppercase;  /* Texto em maiúsculas */
+    letter-spacing: 3px;  /* Espaçamento entre letras */
+    padding: 8px 15px;
+    border-radius: 30px;  /* Bordas arredondadas */
+    transition: all 0.3s ease;  /* Animação suave ao passar o mouse */
+}
+
+/* Efeito hover nos links de navegação */
+.nav-links li a:hover {
+    background: rgba(255, 255, 255, 0.15);  /* Fundo branco transparente */
+    color: #f5d742;  /* Texto amarelo */
+    transform: scale(1.05);  /* Aumenta levemente o tamanho */
+}
+
+/* ========================================
+   HERO - SEÇÃO INICIAL
+   ======================================== */
+
+/* Seção hero - ocupa a tela inteira */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);  /* Altura total menos o cabeçalho */
+    min-height: 400px;  /* Altura mínima */
+    background: #ffffff;  /* Fundo branco */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container do texto central */
+.texto-central {
+    text-align: center;
+}
+
+/* Título principal */
+.hero h1 {
+    font-family: 'Great Vibes', cursive;  /* Fonte cursiva */
+    font-size: 76px;
+    color: #2d5016;  /* Verde escuro */
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+/* Subtítulo */
+.hero .subtitulo {
+    font-family: 'Cutive Mono', serif;
+    font-size: 18px;
+    color: #4a6b3a;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    opacity: 0.7;  /* Leve transparência */
+    margin-top: 5px;
+}
+
+/* ========================================
+   CONTEÚDO GERAL
+   ======================================== */
+
+/* Estilo base para todas as seções de conteúdo */
+.conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    min-height: 400px;
+    background: #ffffff;
+    border-top: 1px solid #f0ebe5;  /* Linha separadora */
+}
+
+/* Títulos das seções */
+.conteudo h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    color: #2d5016;
+    margin-bottom: 20px;
+}
+
+/* Parágrafos das seções */
+.conteudo p {
+    font-family: 'Cutive Mono', serif;
+    font-size: 18px;
+    color: #4a6b3a;
+    line-height: 1.8;
+    max-width: 700px;
+}
+
+/* ========================================
+   MENU
+   ======================================== */
+
+/* Estilo específico da seção menu */
+#menu {
+    background-color: #aece9f;  /* Fundo verde claro */
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Título da seção menu */
+.titulo-secao {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    text-align: start;
+    color: #2d5016;
+    margin-bottom: 5px;
+}
+
+/* Descrição da seção menu */
+.descricao-secao {
+    font-family: 'Cutive Mono', serif;
+    font-size: 18px;
+    color: #4a6b3a;
+    text-align: start;
+    letter-spacing: 2px;
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+
+/* Grid de cards de flores - 4 colunas */
+.grid-flores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;  /* Espaçamento entre os cards */
+}
+
+/* Card individual de flor */
+.flor-card {
+    background: #faf8f5;
+    border-radius: 20px;
+    overflow: hidden;  /* Esconde conteúdo que ultrapassa */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;  /* Todos os cards com mesma altura */
+}
+
+/* Efeito hover no card */
+.flor-card:hover {
+    transform: translateY(-8px);  /* Eleva o card */
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+/* Container da imagem da flor */
+.flor-imagem {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+/* Estilo da imagem dentro do card */
+.flor-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Cobre todo o espaço sem distorcer */
+    transition: transform 0.4s ease;
+}
+
+/* Efeito de zoom na imagem ao passar o mouse */
+.flor-card:hover .flor-imagem img {
+    transform: scale(1.05);
+}
+
+/* Informações da flor (nome, descrição, preço, botão) */
+.flor-info {
+    padding: 20px 20px 25px;
+    text-align: center;
+    flex: 1;  /* Ocupa o espaço restante */
+}
+
+/* Nome da flor */
+.flor-info h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    color: #2d5016;
+    margin-bottom: 8px;
+}
+
+/* Descrição da flor */
+.flor-descricao {
+    font-family: 'Cutive Mono', serif;
+    font-size: 14px;
+    color: #6a7a5e;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    min-height: 65px;  /* Altura mínima para alinhar os cards */
+    flex: 1;
+    text-align: justify;
+}
+
+/* Preço da flor */
+.flor-preco {
+    font-family: 'Cutive Mono', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #4a6b3a;
+    margin-bottom: 15px;
+    margin-top: auto;  /* Empurra para baixo */
+}
+
+/* Botão de comprar */
+.btn-comprar {
+    margin-top: 10px;
+    align-self: center;
+    background: #4a6b3a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-family: 'Cutive Mono', serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Efeito hover no botão */
+.btn-comprar:hover {
+    background: #2d5016;
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(74, 107, 58, 0.3);
+}
+
+/* ========================================
+   SOBRE NÓS
+   ======================================== */
+
+/* Estilo específico da seção sobre */
+#sobre {
+    background-color: #aece9f;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Grid principal da seção sobre */
+.sobre-grid {
+    display: flex;
+    flex-direction: column;  /* Colunas empilhadas verticalmente */
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Cada item (história, valores, especialidades) */
+.sobre-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Duas colunas iguais */
+    gap: 40px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.4);  /* Fundo branco transparente */
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* Container da foto */
+.sobre-foto {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Estilo da imagem */
+.sobre-foto img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Títulos do texto */
+.sobre-texto h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px;
+    color: #2d5016;
+    margin-bottom: 15px;
+}
+
+/* Parágrafos do texto */
+.sobre-texto p {
+    font-family: 'Cutive Mono', serif;
+    font-size: 16px;
+    color: #2d5016;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+/* ===== LISTA DE VALORES ===== */
+
+/* Lista de valores sem marcadores */
+.lista-valores {
+    list-style: none;
+    padding: 0;
+}
+
+/* Cada item da lista de valores */
+.lista-valores li {
+    font-family: 'Cutive Mono', serif;
+    font-size: 15px;
+    color: #2d5016;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+}
+
+/* Negrito na lista de valores */
+.lista-valores li strong {
+    color: #1a3a0e;
+}
+
+/* ========================================
+   NOSSAS ESPECIALIDADES - BLOCO COMPLETO
+   ======================================== */
+
+/* Bloco de especialidades - ocupa as duas colunas */
+.especialidades-bloco {
+    grid-column: 1 / -1;  /* Ocupa todas as colunas disponíveis */
+    display: block !important;  /* Sobrescreve o grid padrão */
+    padding: 40px !important;
+    background: #2d5016(255, 255, 255, 0.6) !important;
+    border-radius: 20px !important;
+    margin-top: 20px;
+}
+
+/* Título do bloco de especialidades */
+.especialidades-bloco .sobre-texto {
+    width: 100%;
+}
+
+/* Estilo do título */
+.especialidades-bloco .sobre-texto h3 {
+    text-align: center;
+    font-size: 36px;
+    color: #2d5016;
+    margin-bottom: 30px;
+}
+
+/* Grid das especialidades - 4 colunas */
+.especialidades-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: 100%;
+}
+
+/* Cada especialidade */
+.especialidade {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito hover na especialidade */
+.especialidade:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Container da imagem da especialidade */
+.especialidade-foto {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+/* Estilo da imagem */
+.especialidade-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Zoom na imagem ao passar o mouse */
+.especialidade:hover .especialidade-foto img {
+    transform: scale(1.05);
+}
+
+/* Informações da especialidade */
+.especialidade-info {
+    padding: 18px;
+}
+
+/* Título da especialidade */
+.especialidade-info h4 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 22px;
+    color: #2d5016;
+    margin-bottom: 8px;
+}
+
+/* Descrição da especialidade */
+.especialidade-info p {
+    font-family: 'Cutive Mono', serif;
+    font-size: 14px;
+    color: #4a6b3a;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+}
+
+/* ========================================
+   RESPONSIVIDADE ESPECIALIDADES
+   ======================================== */
+
+/* Tablets e telas médias */
+@media (max-width: 1024px) {
+    .especialidades-grid {
+        grid-template-columns: repeat(2, 1fr);  /* 2 colunas em vez de 4 */
+        gap: 20px;
+    }
+}
+
+/* Tablets pequenos e celulares grandes */
+@media (max-width: 768px) {
+    .especialidades-bloco {
+        padding: 25px !important;
+    }
+    
+    .especialidades-bloco .sobre-texto h3 {
+        font-size: 30px;
+    }
+    
+    .especialidade-foto {
+        height: 160px;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    .especialidades-grid {
+        grid-template-columns: 1fr;  /* 1 coluna */
+        gap: 15px;
+    }
+    
+    .especialidades-bloco {
+        padding: 20px !important;
+    }
+    
+    .especialidades-bloco .sobre-texto h3 {
+        font-size: 26px;
+    }
+    
+    .especialidade-foto {
+        height: 200px;
+    }
+}
+
+/* ========================================
+   RESPONSIVIDADE ESPECIALIDADES (duplicado - manter)
+   ======================================== */
+
+/* Tablets e telas médias */
+@media (max-width: 1024px) {
+    .especialidades-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Tablets pequenos */
+@media (max-width: 768px) {
+    .titulo-especialidades {
+        font-size: 30px;
+    }
+    
+    .especialidade-foto {
+        height: 180px;
+    }
+    
+    .especialidade-info h4 {
+        font-size: 20px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    .especialidades-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .titulo-especialidades {
+        font-size: 26px;
+    }
+    
+    .especialidade-foto {
+        height: 200px;
+    }
+}
+
+/* ========================================
+   SAIBA MAIS
+   ======================================== */
+
+/* Estilo específico da seção saiba mais */
+#saiba-mais {
+    background-color: #aece9f;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Grid da seção saiba mais - 2 colunas */
+.saibamais-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* ===== ESTILO BASE DOS BLOCOS ===== */
+
+/* Cada bloco (localização e redes sociais) */
+.saibamais-item {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito hover nos blocos */
+.saibamais-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Títulos dos blocos */
+.saibamais-texto h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    color: #2d5016;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Container da imagem */
+.saibamais-foto {
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Estilo da imagem */
+.saibamais-foto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Informações textuais */
+.saibamais-info p {
+    font-family: 'Cutive Mono', serif;
+    font-size: 15px;
+    color: #2d5016;
+    line-height: 1.8;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* ===== LOCALIZAÇÃO - BLOCO COM FUNDO DIFERENTE ===== */
+
+/* Bloco de localização com fundo mais claro */
+.localizacao {
+    background: rgba(255, 255, 255, 0.7) !important;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 35px;
+}
+
+/* Imagem maior no bloco de localização */
+.localizacao .saibamais-foto img {
+    height: 280px;
+}
+
+/* Título maior no bloco de localização */
+.localizacao .saibamais-texto h3 {
+    font-size: 32px;
+    color: #1a3a0e;
+}
+
+/* Texto mais escuro no bloco de localização */
+.localizacao .saibamais-info p {
+    font-size: 16px;
+    color: #1a3a0e;
+}
+
+/* ===== REDES SOCIAIS - BLOCO ===== */
+
+/* Bloco das redes sociais */
+.redes-sociais-bloco {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 30px;
+}
+
+/* Altura da imagem no bloco de redes sociais */
+.redes-sociais-bloco .saibamais-foto img {
+    height: 200px;
+}
+
+/* ===== REDES SOCIAIS - ÍCONES ===== */
+
+/* Container dos links das redes sociais */
+.redes-sociais {
+    display: flex;
+    flex-direction: column;  /* Links empilhados verticalmente */
+    gap: 12px;
+    margin: 15px 0;
+}
+
+/* Cada link de rede social */
+.rede-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    text-decoration: none;
+    color: #2d5016;
+    font-family: 'Cutive Mono', serif;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Estilo dos ícones das redes sociais */
+.rede-link img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Efeito hover nos links das redes sociais */
+.rede-link:hover {
+    background: #2d5016;
+    color: #ffffff;
+    transform: scale(1.02);
+}
+
+/* Inverte a cor dos ícones ao passar o mouse */
+.rede-link:hover img {
+    filter: brightness(0) invert(1);
+}
+
+/* ========================================
+   RESPONSIVIDADE SAIBA MAIS
+   ======================================== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .saibamais-grid {
+        grid-template-columns: 1fr;  /* 1 coluna em vez de 2 */
+        gap: 25px;
+    }
+    
+    .saibamais-item {
+        padding: 25px;
+    }
+    
+    .localizacao {
+        padding: 25px;
+    }
+    
+    .localizacao .saibamais-foto img {
+        height: 220px;
+    }
+    
+    .saibamais-foto img {
+        height: 200px;
+    }
+    
+    .saibamais-texto h3 {
+        font-size: 24px;
+    }
+    
+    .localizacao .saibamais-texto h3 {
+        font-size: 28px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    .saibamais-item {
+        padding: 18px;
+    }
+    
+    .localizacao {
+        padding: 18px;
+    }
+    
+    .localizacao .saibamais-foto img {
+        height: 180px;
+    }
+    
+    .saibamais-foto img {
+        height: 170px;
+    }
+    
+    .saibamais-texto h3 {
+        font-size: 20px;
+    }
+    
+    .localizacao .saibamais-texto h3 {
+        font-size: 24px;
+    }
+    
+    .rede-link {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+    
+    .rede-link img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+/* ========================================
+   REDES SOCIAIS CORREÇÃO COMPLETA
+   ======================================== */
+
+/* Container dos links das redes sociais (versão corrigida) */
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+/* Cada link de rede social (versão corrigida) */
+.rede-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: 'Cutive Mono', serif;
+    font-size: 17px;
+    color: #2d5016;
+    text-decoration: none;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+/* Container da imagem da rede social */
+.rede-imagem {
+    width: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Ícone da rede social */
+.rede-icon {
+    width: 30px;
+    height: 50px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Nome da rede social */
+.rede-nome {
+    flex: 1;
+}
+
+/* Efeito hover nos links */
+.rede-link:hover {
+    background: #2d5016;
+    color: #ffffff;
+    transform: translateX(8px);
+}
+
+/* Inverte a cor do ícone ao passar o mouse */
+.rede-link:hover .rede-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* ========================================
+   RESPONSIVIDADE GERAL
+   ======================================== */
+
+/* ===== MENU - RESPONSIVIDADE ===== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .grid-flores {
+        grid-template-columns: repeat(2, 1fr);  /* 2 colunas em vez de 4 */
+        gap: 25px;
+    }
+}
+
+/* ===== SOBRE - RESPONSIVIDADE ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .sobre-item {
+        grid-template-columns: 1fr;  /* 1 coluna em vez de 2 */
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .sobre-foto img {
+        height: 200px;
+    }
+    
+    .sobre-texto h3 {
+        font-size: 28px;
+    }
+}
+
+/* ===== MENU MOBILE ===== */
+
+/* Celulares */
+@media (max-width: 768px) {
+    .grid-flores {
+        grid-template-columns: 1fr;  /* 1 coluna */
+        gap: 20px;
+    }
+    
+    .flor-imagem {
+        height: 200px;
+    }
+    
+    .flor-info h3 {
+        font-size: 24px;
+    }
+    
+    .titulo-secao {
+        font-size: 36px;
+    }
+    
+    .descricao-secao {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+}
+
+/* ===== HEADER E GERAL - RESPONSIVIDADE ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;  /* Menos espaço para o cabeçalho */
+    }
+    
+    .cabecalho {
+        padding: 14px 0;
+    }
+    
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;  /* Quebra para a próxima linha se necessário */
+        justify-content: center;
+    }
+    
+    .nav-links li a {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        padding: 6px 12px;
+    }
+    
+    .hero h1 {
+        font-size: 52px;  /* Título menor */
+    }
+    
+    .hero .subtitulo {
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+    
+    .hero {
+        height: calc(100vh - 60px);
+        min-height: 300px;
+    }
+    
+    .conteudo {
+        padding: 50px 20px;
+        min-height: 300px;
+    }
+    
+    .conteudo h2 {
+        font-size: 36px;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    body {
+        padding-top: 55px;
+    }
+    
+    .cabecalho {
+        padding: 12px 0;
+    }
+    
+    .nav-links {
+        gap: 12px;
+    }
+    
+    .nav-links li a {
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+    }
+    
+    .hero h1 {
+        font-size: 40px;
+    }
+    
+    .hero .subtitulo {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+    
+    .hero {
+        height: calc(100vh - 55px);
+        min-height: 250px;
+        padding: 10px;
+    }
+    
+    .conteudo {
+        padding: 30px 15px;
+        min-height: 250px;
+    }
+    
+    .conteudo h2 {
+        font-size: 28px;
+    }
+    
+    .conteudo p {
+        font-size: 15px;
+    }
+}
+
+/* ===== TELAS GRANDES ===== */
+
+/* Monitores grandes */
+@media (min-width: 1400px) {
+    .hero h1 {
+        font-size: 96px;  /* Título maior */
+    }
+    
+    .hero .subtitulo {
+        font-size: 24px;
+        letter-spacing: 12px;
+    }
+}
